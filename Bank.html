@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+<script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+    <header>
+<h1 class="text-6xl text-center mt-6 text-orange-500">Let's get some <span class="font-bold text-orange-700">MOooney</span></h1>
+    </header>
+    <main>
+<section class="mt-16">
+    <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+
+        <div class="bg-orange-400 p-8 rounded-lg">
+    <h4 class="font-thin text-5xl text-center">Deposit</h4>
+    <h2  class="font-semibold text-7xl text-center pt-5"><span class="text-yellow-900">$</span> <span id="deposit-total">00</span></h2>
+       </div>
+        <div class="bg-orange-300 p-8 rounded-lg ">
+    <h4 class="font-thin text-5xl text-center">Withdraw</h4>
+    <h2 class="font-semibold text-7xl text-center pt-5"><span class="text-yellow-900">$</span><span id="withdraw-total">00</span></h2>
+       </div>
+        <div class="bg-orange-500 p-8 rounded-lg">
+    <h4 class="font-thin text-5xl text-center">Balance</h4>
+    <h2 class="font-semibold text-7xl text-center pt-5"><span class="text-yellow-900">$</span> <span id="balance-total">3450</span> </h2>
+       </div>
+    </div>
+</section>
+<!-- Deposit...and...Withdraw-->
+<section class="pt-24">
+    <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto pb-12">
+
+        <div class="bg-red-800 p-8 rounded-lg ">
+    <h4 class="font-semibold text-3xl text-center mb-4 text-white "> Deposit Now!</h4>
+    <div>
+        <input class="w-9/12 block mb-4 px-3" type="text" name="" id="deposit-field" placeholder=" $ Amount You Can Deposit Now!!">
+        <button id="btn-deposit" class="bg-amber-600 dark:md:hover:bg-red-400 text-white px-8 text-2xl py-2 rounded-lg">Deposit</button>        
+    </div>
+       </div>
+
+       
+        <div class="bg-red-800 p-8 rounded-lg ">
+    <h4 class="font-semibold text-3xl text-center mb-4 text-white">Withdraw Now!</h4>
+    <div>
+        <input id="withdraw-field" class="w-9/12 block mb-4 px-3" type="text" name="" id="withdraw-field" placeholder="$ Amount You Can Withdraw Now!!">
+        <button id="btn-withdraw" class="bg-amber-600 dark:md:hover:bg-red-400 text-white px-8 text-2xl py-2 rounded-lg">Withdraw</button>
+    </div>
+
+       </div>
+    </div>
+</section>
+   </main>
+   <script src="Bank.js"></script>
+   <script src="Withdraw.js"></script>
+</body>
+</html>
